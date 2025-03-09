@@ -52,10 +52,10 @@ main {
     width: 80%;  /* Responsive width */
     max-width: 900px;  /* Ensures it never grows beyond this */
     min-width: 600px;  /* Prevents it from shrinking too much */
-    margin: 20px auto;
+    margin: 50px auto;
     background: white;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 50px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
