@@ -48,14 +48,11 @@ nav a:hover {
 
 /* Main Content Styling */
 main {
-    flex: 1;  /* Pushes the footer down */
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Responsive width */
+    max-width: 900px; /* Won't go beyond 900px */
+    min-width: 600px; /* Prevents it from shrinking too much */
 }
+
 
 /* Sections */
 section {
