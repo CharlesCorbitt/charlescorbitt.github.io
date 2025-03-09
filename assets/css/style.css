@@ -23,7 +23,6 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    border-radius: 5px;
 }
 
 /* Navigation Bar */
@@ -40,15 +39,22 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Wrapper for Full Page Layout */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensures the page takes the full viewport height */
+}
+
 /* Main Content Styling */
 main {
+    flex: 1;  /* Pushes the footer down */
     max-width: 900px;
     margin: 20px auto;
     background: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Pushes the footer down */
 }
 
 /* Sections */
@@ -61,12 +67,11 @@ section h2 {
     padding-bottom: 5px;
 }
 
-/* Footer (Fixed to Bottom) */
+/* Footer (Sticks to Bottom Properly) */
 footer {
     background: #2c3e50;
     color: white;
     text-align: center;
     padding: 10px;
     width: 100%;
-    position: relative;
-}
+    margin-top
