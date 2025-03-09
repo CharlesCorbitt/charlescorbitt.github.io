@@ -6,12 +6,15 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body Styling */
-body {
+/* Ensure full height layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
 /* Header Styling */
@@ -45,6 +48,7 @@ main {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Pushes the footer down */
 }
 
 /* Sections */
@@ -57,22 +61,12 @@ section h2 {
     padding-bottom: 5px;
 }
 
-/* Footer */
+/* Footer (Fixed to Bottom) */
 footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
     background: #2c3e50;
     color: white;
-    border-radius: 5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-    main {
-        padding: 15px;
-    }
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
 }
