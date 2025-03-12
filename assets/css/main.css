@@ -2201,7 +2201,8 @@ footer .copyright {
   padding: 1em 2em;
   font-size: 0.9em; }
   footer .copyright a {
-    color: inherit; }
+    color: inherit;
+    padding: 1em 2em; }
 
 /* Menu */
 #menu ul {
