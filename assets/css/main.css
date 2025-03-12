@@ -1853,6 +1853,8 @@ main {
 
 main > section {
     padding: 6em 1em 4em 1em;     /* Adjust section padding similarly */
+    margin: 0 auto;
+    width: 95%;
     border-top: solid 2px rgba(210, 215, 217, 0.75);
 }
 
