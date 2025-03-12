@@ -1846,7 +1846,7 @@ button,
 /* Main */
 main {
     padding: 2em 1em 0.1em 1em;  /* Reduced left/right padding */
-    margin: 0 auto;
+    margin: 0.5 auto;
     width: 95%;                 /* Makes main take up more of the viewport */
     max-width: 110em;
 }
