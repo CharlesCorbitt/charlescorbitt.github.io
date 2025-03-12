@@ -2198,6 +2198,7 @@ header {
 /* Footer */
 footer .copyright {
   color: #9fa3a6;
+  padding: 1em 2em;
   font-size: 0.9em; }
   footer .copyright a {
     color: inherit; }
