@@ -1845,7 +1845,7 @@ button,
 
 /* Main */
 main {
-    padding: 0 10em 0.1em 10em ;
+    padding: 0 8em 0.1em 8em ;
     margin: 0 auto;
     max-width: 110em;
 }
@@ -2079,7 +2079,7 @@ main > section:first-of-type {
         width: 5em; } }
 
 /* Header */
-#header {
+header {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -2087,29 +2087,29 @@ main > section:first-of-type {
   border-bottom: solid 5px #f56a6a;
   padding: 6em 0 1em 0;
   position: relative; }
-  #header > * {
+  header > * {
     -moz-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
     margin-bottom: 0; }
-  #header .logo {
+  header .logo {
     border-bottom: 0;
     color: inherit;
     font-family: "Roboto Slab", serif;
     font-size: 1.125em; }
-  #header .icons {
+  header .icons {
     text-align: right; }
   @media screen and (max-width: 1680px) {
-    #header {
+    header {
       padding-top: 5em; } }
   @media screen and (max-width: 736px) {
-    #header {
+    header {
       padding-top: 6.5em; }
-      #header .logo {
+      header .logo {
         font-size: 1.25em;
         margin: 0; }
-      #header .icons {
+      header .icons {
         height: 5em;
         line-height: 5em;
         position: absolute;
