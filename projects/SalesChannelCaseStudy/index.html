@@ -17,11 +17,18 @@
   <main>
     <section id="overview">
       <h2>Project Overview</h2>
-      <p>[Insert an introduction to the Sales Channel Case Study. Explain the business problem, objectives, and scope of the analysis.]</p>
+      <p>The goal of this project was to evaluate sales data and performance metrics to determine the most effective strategies for driving growth and efficiency. The analysis was comprehensive, going beyond the provided single data source to also incorporate seasonality effects and explore a budget reduction scenario.</p>
     </section>
     <section id="data">
       <h2>Data & Methodology</h2>
-      <p>[Describe the data sources, cleaning steps, and methodology used in your analysis.]</p>
+      <p>Overview: The dataset was from a travel company, providing customer-level data regarding acquisition cost, first/last purchase dates, total purchases, avg. order value and revenue, customer lifetime, churn indicator,  sales channel, and outreach date
+         <br><br>
+        Exploratory Data Analysis: There were some data quality issues, specifically ‘Last_Purchase_Date’ had some values in the future, so I dropped these from the dataset since they were pretty evenly spread across the channels. Then I looked at all metrics by sales channel, to get a high-level sense of channel performance and possible ideas for further analysis.
+        <br><br>
+        Feature Engineering: I calculated new fields to use in other downstream analyses, including: Days_to_First_Purchase, Purchases_Per_Month, Monthly_Revenue, CAC_Revenue_Ratio, LTV_CAC_Ratio, and Quarter. I also created a new field 'Holiday_Flag' to test for whether the Q4 holidays affect sales performance. Another data source I added was monthly inflation during all of the Outreach months, mapped to the last purchase dates. Also since there were many different performance fields, I decided to create a single composite performance score based off of 5 metrics (Avg. revenue per customer, CAC/revenue ratio, churn rate, avg. order value, deal velocity) to better understand channel performance.
+        <br><br>
+        Modeling: I modeled churn rate using a logistic regression.
+        [Describe the data sources, cleaning steps, and methodology used in your analysis.]</p>
     </section>
     <section id="analysis">
       <h2>Analysis & Findings</h2>
