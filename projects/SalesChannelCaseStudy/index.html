@@ -27,12 +27,17 @@
         <br><br>
         Feature Engineering: I calculated new fields to use in other downstream analyses, including: Days_to_First_Purchase, Purchases_Per_Month, Monthly_Revenue, CAC_Revenue_Ratio, LTV_CAC_Ratio, and Quarter. I also created a new field 'Holiday_Flag' to test for whether the Q4 holidays affect sales performance. Another data source I added was monthly inflation during all of the Outreach months, mapped to the last purchase dates. Also since there were many different performance fields, I decided to create a single composite performance score based off of 5 metrics (Avg. revenue per customer, CAC/revenue ratio, churn rate, avg. order value, deal velocity) to better understand channel performance.
         <br><br>
-        Modeling: I modeled churn rate using a logistic regression.
-        [Describe the data sources, cleaning steps, and methodology used in your analysis.]</p>
+        Modeling: First I modeled churn rate using a logistic regression with channel as predictor. Next, I predicted the revenue impact for each channel, given a theoretical 20% reduction in budget, weighting the decreases in each channel based off of the churn rate of each.
+      </p>
     </section>
     <section id="analysis">
       <h2>Analysis & Findings</h2>
-      <p>[Summarize the key findings and insights from your analysis. Include details on charts, visualizations, or specific observations that are crucial to your case study.]</p>
+      <p>The first interesting finding was that Events channel consistently had a drastic 50% reduction in their outreach efforts from Q2 to Q3, for each year throughout the 3 year time period. Next, I also discovered that both the Cold Calls and Events channels have a shorter conversion time (Days to Purchase) when their outreach took place on holidays.
+          <br><br>
+        From the logistic regression, I identified that Partnerships had nearly double the odds of churning compared to all other channels, though channel alone was not a sufficient predictor in the model suggesting additional fine tuning is needed to increase the power of the model. 
+          <br><br>
+        The budget reduction impact analysis revealed that Inbound Leads would be the most resilient to a budget decrease, while Events and Partnerships would be most affected.
+      </p>
     </section>
     
     <!-- New Section for Embedded PDF -->
@@ -50,7 +55,14 @@
 
     <section id="conclusion">
       <h2>Conclusion & Recommendations</h2>
-      <p>[Conclude with the main takeaways and any recommendations or next steps based on your findings.]</p>
+      <p> Cold Calls has fewest total customers, but 2nd best composite score. This suggests Cold Calls is very efficient and that we should increase their budget.
+          <br><br>
+          The holiday period findings represents a good opportunity to further increase Cold Calls and Events output. I recommened an A/B test that shifts a % of Cold Call/Events outreach efforts into holiday periods, to evaluate whether we can better leverage their increased deal velocity seen during holidays.
+          <br><br>
+          While Partnerships had the highest churn rate in the logistic regression, the model still had room for improvment as only 76% of the variance could be explained. This means I have not yet identified the best predictors so should iterate on the initial logistic regression model to fine tune.
+          <br><br>
+          Based on both the performance analyses and simulated budget reductions, my overall recommendation is to reallocate resources from Events/Partnerships to the other 3 channels to optimize budget allocation. This strategy will help mitigate any revenue loss and maintain revenue efficiency by emphasizing investment in channels with stronger performance.
+      </p>
     </section>
   </main>
   <footer>
